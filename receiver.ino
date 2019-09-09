@@ -4,7 +4,7 @@ LiquidCrystal lcd(12, 11, 5, 4, 3, 2); // Creates an LC object. Parameters: (rs,
 // Configuration
 // Minimum tested unit length was 10ms and it works reliably with cheap light resistor.
 const int UNIT_LENGTH = 100;
-const int BUFFER_SIZE = 4;
+const int BUFFER_SIZE = 5;
 
 
 enum class Signal: byte {
@@ -315,9 +315,9 @@ void setup() {
   Serial.begin(9600);
   
   lcd.begin(16,2); // set up the LCD's number of columns and rows
-  lcd.setCursor(0,0); //testADR
-  lcd.print("Morse Translator"); //testADR
-  lcd.setCursor(0,1); //testADR
+  lcd.setCursor(0,0); 
+  lcd.print("Morse Translator"); 
+  lcd.setCursor(0,1); 
 
   // Sets up a timer interrupt to be called for every millisecond
   cli();
