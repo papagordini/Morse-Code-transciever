@@ -1,6 +1,6 @@
-int button1 = 11;  //testADR
-int button2 = 10;  //testADR
-int button3 = 12;  //testADR
+int button1 = 11;  
+int button2 = 10;  
+int button3 = 12;  
 
 
 #define DEBUG
@@ -169,9 +169,9 @@ const char* text3 = "/MORSE CODE.";
 
 void setup() {
   pinMode(7, OUTPUT);
-  pinMode(button1, INPUT_PULLUP); //testADR
-  pinMode(button2, INPUT_PULLUP); //testADR
-  pinMode(button3, INPUT_PULLUP); //testADR
+  pinMode(button1, INPUT_PULLUP); 
+  pinMode(button2, INPUT_PULLUP); 
+  pinMode(button3, INPUT_PULLUP); 
     
   Serial.begin(19200);
   
@@ -184,14 +184,9 @@ void loop() {
   play(text);
 }
 if (digitalRead(button2) == LOW) {
-  play(text);
-  delay(200);
   play(text2);
 }
 if (digitalRead(button3) == LOW) {
-  play(text);
-  delay(200);
   play(text3);
 }
- // play(text);
 }
