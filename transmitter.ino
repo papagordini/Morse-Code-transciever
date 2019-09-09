@@ -163,9 +163,9 @@ void play(const char * input) {
   }
 }
 
-const char* text = "/";
-const char* text2 = "/PF-RIJEKA.";
-const char* text3 = "/ZAVRSNI RAD.";
+const char* text = "HELLO";
+const char* text2 = "..TEST2.";
+const char* text3 = "/MORSE CODE.";
 
 void setup() {
   pinMode(7, OUTPUT);
